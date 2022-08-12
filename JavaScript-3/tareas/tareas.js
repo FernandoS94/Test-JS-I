@@ -9,7 +9,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.lenght-1];
+  return array[array.length-1];
 }
 
 function obtenerLargoDelArray(array) {
@@ -23,6 +23,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  
+  for (let i = 0; index < array.length; i++) {
+    array[i] = array[i]+1;
+    
+  }
+  return array;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -51,18 +57,34 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (let i = 0; index < array.length; i++) {
+    array[i] == elemento
+}
 }
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let array = [1,2,3,4,5,6,7,8,9,10];
+  let suma;
+  for (let i = 0; index < array.length; i++) {
+    numeros += array[i]; 
 }
+return numeros;
+}
+
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let numeros;
+  for (let i = 0; index < resultadosTest.length; i++) {
+    numeros += resultadosTest[i]; 
+}
+let resultado = numeros / resultadosTest.lenght;
+return resultado;
 }
 
 function numeroMasGrande(numeros) {
@@ -81,6 +103,16 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+  let dias =['lunes','martes','miercoles','jueves','viernes','sabado','domingo'];
+  
+  for (let i = 0; i < dias.length; i++) {
+    numeroDeDia = dias[i];
+    if (numeroDeDia== 5 || 6) {
+      return 'Es fin de semana';
+          }
+          return 'Es dia Laboral';
+    
+  }
 } 
 
 function empiezaConNueve(n) {

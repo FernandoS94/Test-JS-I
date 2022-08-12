@@ -101,13 +101,13 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-   if((numero == 10) || (numero ==5)) {
-    return 'True';
+   if(numero == 10 || numero == 5) {
+    return 'true';
     
-  }else{
+  }
     return 'false';
   }
-}
+
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
@@ -171,17 +171,20 @@ function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor === true) {
-    return 'Soy verdadero'
-        
-  }else{
-    return 'Soy Falso'
-  }
+  //if (valor === true) {
+  //  return 'Soy verdadero'
+  //      
+  //}else{
+  //  return 'Soy Falso'
+  //}
+  return valor == true;
 }
 
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  return numero.toString().length() == '3';
+    
 }
 
 // ---------- Puntos extra ----------

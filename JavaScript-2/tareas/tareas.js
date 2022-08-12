@@ -113,7 +113,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 || numero > 20) {
+  if (numero < 50 && numero > 20) {
     return 'true'
   }else{
     return 'false'
@@ -128,6 +128,11 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero % 1 == 0) {
+    return 'true';
+  }else{
+  return 'false';
+  }
 }
 
 function fizzBuzz(numero) {
@@ -144,12 +149,34 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  switch (num1, num2, num3) {
+    case num1 && num2 && num3 && num3 >0 :
+      return 'Número 1 es mayor y positivo'
+            break;
+    case num1<0 || num2<0 || num3<0  :
+      return 'Hay negativos'
+             break;
+    case num3>num1 && num3<num2   :
+      return num3+1
+              break;
+    case num3==0 || num2==0 || num1 == 0   :
+      return 'Error'
+              break;
+    default: 'false'
+      break;
+  }
 }
 
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+  if (valor === true) {
+    return 'Soy verdadero'
+        
+  }else{
+    return 'Soy Falso'
+  }
 }
 
 function tieneTresDigitos(numero) {

@@ -77,7 +77,8 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   // lengt
-return str1.lenght == str2.lenght;
+
+return str1.length == str2.length;
 
 }
 
@@ -111,7 +112,7 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  return num%2===0;
+  return num % 2==0;
 }
 
 function esImpar(num) {
@@ -119,7 +120,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  return num%2===1;
+  return num % 2===1;
 }
 
 function elevarAlCuadrado(num) {
@@ -165,13 +166,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if  (num > 0){
-    return "Es positivo"
-  }else if (num < 0){
-    return "Es negativo"
-  }else if (num == 0){
+  if  (numero > 0){
+    return 'Es positivo';
+  }else if (numero < 0){
+    return 'Es negativo';
+  }else if (numero === 0){
     return 'false';
   }
+  
   
 }
 
@@ -187,6 +189,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
   // Tu código:
+  
+  return nombre + apellido;
 }
 
 function obtenerSaludo(nombre) {
@@ -194,7 +198,7 @@ function obtenerSaludo(nombre) {
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
   
-  return 'Hola'+ nombre + '!';
+  return hola = 'Hola'+ nombre + '!';
 }
 
 function deEuroAdolar(euro) {
@@ -235,16 +239,13 @@ function esVocal(letra) {
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  var vocales = [a,e,i,o,u];
+  let vocales = ['a','e','i','o','u'];
   //var letras = letra.split(',');
 
-  if (letras === ''){
-    for (let i = 0; i < vocales.length; i++) {
-      if (vocales[i] === letra){
-        return 'Es vocal';
-      }
-    }
-  } else{
+  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    return 'Es vocal'
+  }else
+        {
     return 'Dato incorrecto'
         }
   

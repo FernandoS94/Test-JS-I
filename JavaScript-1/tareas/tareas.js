@@ -166,6 +166,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  
   if  (numero > 0){
     return 'Es positivo';
   }else if (numero < 0){
@@ -198,7 +199,7 @@ function obtenerSaludo(nombre) {
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
   
-  return hola = 'Hola'+ nombre + '!';
+  return  'Hola'+nombre+'!';
 }
 
 function deEuroAdolar(euro) {

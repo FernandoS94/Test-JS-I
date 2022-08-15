@@ -43,6 +43,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  return array.unshift(elemento);
 }
 
 function dePalabrasAFrase(palabras) {
@@ -58,7 +59,10 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (let i = 0; index < array.length; i++) {
-    array[i] == elemento
+    if(array[i] == elemento){
+      return 'true';
+    }
+    return 'false';
 }
 }
 
@@ -66,10 +70,10 @@ function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  let array = [1,2,3,4,5,6,7,8,9,10];
-  let suma;
-  for (let i = 0; index < array.length; i++) {
-    numeros += array[i]; 
+  //let array = [1,2,3,4,5,6,7,8,9,10];
+ // let suma;
+  for (let i = 0; i < numeros.length; i++) {
+    numeros += numeros[i]; 
 }
 return numeros;
 }
@@ -106,8 +110,8 @@ function diaDeLaSemana(numeroDeDia) {
   let dias =['lunes','martes','miercoles','jueves','viernes','sabado','domingo'];
   
   for (let i = 0; i < dias.length; i++) {
-    numeroDeDia = dias[i];
-    if (numeroDeDia== 5 || 6) {
+    ;
+    if (dias[numeroDeDia]== 5 || 6) {
       return 'Es fin de semana';
           }
           return 'Es dia Laboral';

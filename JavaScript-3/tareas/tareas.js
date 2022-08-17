@@ -111,7 +111,7 @@ function diaDeLaSemana(numeroDeDia) {
   
   for (let i = 0; i < dias.length; i++) {
     ;
-    if (dias[numeroDeDia]== 5 || 6) {
+    if (dias[numeroDeDia]== 5 || dias[numeroDeDia]== 6) {
       return 'Es fin de semana';
           }
           return 'Es dia Laboral';

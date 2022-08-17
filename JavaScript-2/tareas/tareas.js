@@ -20,9 +20,9 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    return 'Allowed'
+    return 'Allowed';
   }else{
-    return 'Not allowed'
+    return 'Not allowed';
   }
 }
 
@@ -37,9 +37,9 @@ function conection(status) {
     return 'Online';
     
   }else if (status==2){
-    return 'Away'
+    return 'Away';
   }else{
-  return 'Offline'
+  return 'Offline';
   }
 }
 
@@ -102,10 +102,10 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
    if(numero == 10 || numero == 5) {
-    return 'true';
+    return true;
     
   }
-    return 'false';
+    return false;
   }
 
 
@@ -114,9 +114,9 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero < 50 && numero > 20) {
-    return 'true'
+    return true
   }else{
-    return 'false'
+    return false
   }
 }
 
@@ -128,11 +128,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero % 1 == 0) {
-    return 'true';
-  }else{
-  return 'false';
-  }
+  return Number.isInteger(numero);
 }
 
 function fizzBuzz(numero) {
@@ -150,19 +146,20 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   switch (num1, num2, num3) {
-    case num1 && num2 && num3 && num3 >0 :
-      return 'Número 1 es mayor y positivo'
+    case ((num1 > num2) && (num1 > num3) &&  (num1 > 0)) :
+      return 'Número 1 es mayor y positivo';
             break;
-    case num1<0 || num2<0 || num3<0  :
-      return 'Hay negativos'
+    case ((num1<0) || (num2<0) || (num3<0))  :
+      return 'Hay negativos';
              break;
-    case num3>num1 && num3<num2   :
-      return num3+1
+    case ((num3>num1) && (num3>num2) )  :
+      let aumento = num3+1;
+      return aumento;
               break;
-    case num3==0 || num2==0 || num1 == 0   :
-      return 'Error'
+    case ((num3==0) || (num2==0) || (num1 == 0) )  :
+      return 'Error';
               break;
-    default: 'false'
+    default: return false;
       break;
   }
 }
@@ -171,19 +168,23 @@ function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  //if (valor === true) {
-  //  return 'Soy verdadero'
-  //      
-  //}else{
-  //  return 'Soy Falso'
-  //}
-  return valor == true;
+  if (valor === true) {
+    return 'Soy verdadero';
+     
+  }else{
+   return 'Soy Falso';
+  }
+  
 }
 
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  return numero.toString().length() === '3';
+  if (numero.toString().length() == '3'){
+    return true;
+  }else{
+    return false;
+  }
     
 }
 

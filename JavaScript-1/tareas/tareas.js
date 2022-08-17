@@ -167,15 +167,13 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  if  (numero > 0){
+  if( numero > 0){
     return 'Es positivo';
-  }else if (numero < 0){
+  }else if(numero < 0){
     return 'Es negativo';
-  }else if (numero === 0){
-    return 'false';
-  }
-  
-  
+  }else{
+    return false;}
+    
 }
 
 function agregarSimboloExclamacion(str) {
@@ -191,7 +189,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
   // Tu código:
   
-  return nombre + apellido;
+  return `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
@@ -199,7 +197,7 @@ function obtenerSaludo(nombre) {
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
   
-  return  'Hola'+nombre+'!';
+  return  `Hola ${nombre}!`;
 }
 
 function deEuroAdolar(euro) {

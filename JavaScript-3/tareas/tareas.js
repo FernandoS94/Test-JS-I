@@ -120,7 +120,7 @@ function diaDeLaSemana(numeroDeDia) {
 } 
 
 function empiezaConNueve(n) {
-  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
+   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 }
@@ -142,6 +142,15 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let nuevo = [];
+  for (let i = 0; i < array.length; i++) {
+    if ( array[i] > 100) {
+
+      nuevo.push(array[i])
+      
+    } 
+    
+  }
 }
 
 // No modificar nada debajo de esta línea, de lo contrario no correrán los test.

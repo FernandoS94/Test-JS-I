@@ -16,7 +16,7 @@ function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return  array.length;
-}
+}//OK
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -34,7 +34,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   //return array.map(array => array.push(elemento));
   array.push(elemento);
   return array;
- 
+ //OK
  
 }
 
@@ -47,7 +47,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   //return array.map(array,elemento=>array.unshift(elemento));
   array.unshift(elemento);
   return array;
-}//FALTA
+}//OK
 
 
 
@@ -93,10 +93,11 @@ function promedioResultadosTest(resultadosTest) {
   for (let i = 0; i < resultadosTest.length; i++) {
     acu=acu+resultadosTest[i];
       }
-  return acu/resultadosTest.lenght;
+
+  return acu/resultadosTest.length;
  
   
-}//FALTA
+}//OK
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -166,20 +167,24 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
- var meses = [];
-
+ 
+let meses=[];
  for (let i = 0; i < array.length; i++) {
-  if (array[i]==='Marzo'||array[i]==='Noviembre'||array[i]==='Enero') {
+  if (array[i]==='Enero' && array[i]==='Marzo' && array[i]==='Noviembre') {
+    
     meses.push(array[i]);
+    
+    
   }else{
     return 'No se encontraron los meses pedidos';
   }
-  
+ 
  }
  return meses;
-
-
-  
+ 
+/* return (map.array(function(meses){
+   meses==='Enero'||meses==='Marzo'||meses==='Noviembre'
+})) */
 }
 
 function mayorACien(array) {
